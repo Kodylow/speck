@@ -1,0 +1,1188 @@
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:Index not found
+ERROR:backend:Exception on /similarity_search [GET]
+Traceback (most recent call last):
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py", line 23, in similarity_search
+    docs = vectorstore.similarity_search(query, k=1)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 119, in similarity_search
+    docs_and_scores = self.similarity_search_with_score(query, k)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 146, in similarity_search_with_score
+    results = self._collection.query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/models/Collection.py", line 197, in query
+    return self._client._query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/local.py", line 228, in _query
+    uuids, distances = self._db.get_nearest_neighbors(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/clickhouse.py", line 480, in get_nearest_neighbors
+    idx_metadata = self._idx.get_metadata()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/index/hnswlib.py", line 52, in get_metadata
+    raise NoIndexException("Index is not initialized")
+chromadb.errors.NoIndexException: Index is not initialized
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:33:50] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:Index not found
+ERROR:backend:Exception on /similarity_search [GET]
+Traceback (most recent call last):
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py", line 23, in similarity_search
+    docs = vectorstore.similarity_search(query, k=1)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 119, in similarity_search
+    docs_and_scores = self.similarity_search_with_score(query, k)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 146, in similarity_search_with_score
+    results = self._collection.query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/models/Collection.py", line 197, in query
+    return self._client._query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/local.py", line 228, in _query
+    uuids, distances = self._db.get_nearest_neighbors(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/clickhouse.py", line 480, in get_nearest_neighbors
+    idx_metadata = self._idx.get_metadata()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/index/hnswlib.py", line 52, in get_metadata
+    raise NoIndexException("Index is not initialized")
+chromadb.errors.NoIndexException: Index is not initialized
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:36:46] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:Index not found
+ERROR:backend:Exception on /similarity_search [GET]
+Traceback (most recent call last):
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py", line 24, in similarity_search
+    docs = vectorstore.similarity_search(query, k=1)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 119, in similarity_search
+    docs_and_scores = self.similarity_search_with_score(query, k)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 146, in similarity_search_with_score
+    results = self._collection.query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/models/Collection.py", line 197, in query
+    return self._client._query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/local.py", line 228, in _query
+    uuids, distances = self._db.get_nearest_neighbors(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/clickhouse.py", line 480, in get_nearest_neighbors
+    idx_metadata = self._idx.get_metadata()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/index/hnswlib.py", line 52, in get_metadata
+    raise NoIndexException("Index is not initialized")
+chromadb.errors.NoIndexException: Index is not initialized
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:37:28] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:Index not found
+ERROR:backend:Exception on /similarity_search [GET]
+Traceback (most recent call last):
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py", line 23, in similarity_search
+    docs = vectorstore.similarity_search(query, k=1)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 119, in similarity_search
+    docs_and_scores = self.similarity_search_with_score(query, k)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 146, in similarity_search_with_score
+    results = self._collection.query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/models/Collection.py", line 197, in query
+    return self._client._query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/local.py", line 228, in _query
+    uuids, distances = self._db.get_nearest_neighbors(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/clickhouse.py", line 480, in get_nearest_neighbors
+    idx_metadata = self._idx.get_metadata()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/index/hnswlib.py", line 52, in get_metadata
+    raise NoIndexException("Index is not initialized")
+chromadb.errors.NoIndexException: Index is not initialized
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:38:07] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:Index not found
+ERROR:backend:Exception on /similarity_search [GET]
+Traceback (most recent call last):
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py", line 23, in similarity_search
+    docs = vectorstore.similarity_search(query, k=1)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 119, in similarity_search
+    docs_and_scores = self.similarity_search_with_score(query, k)
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/langchain/vectorstores/chroma.py", line 146, in similarity_search_with_score
+    results = self._collection.query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/models/Collection.py", line 197, in query
+    return self._client._query(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/api/local.py", line 228, in _query
+    uuids, distances = self._db.get_nearest_neighbors(
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/clickhouse.py", line 480, in get_nearest_neighbors
+    idx_metadata = self._idx.get_metadata()
+  File "/Users/kodylow/opt/anaconda3/lib/python3.9/site-packages/chromadb/db/index/hnswlib.py", line 52, in get_metadata
+    raise NoIndexException("Index is not initialized")
+chromadb.errors.NoIndexException: Index is not initialized
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:38:44] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:40:42] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:43:51] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+DEBUG:Chroma:time to pre process our knn query: 7.867813110351562e-06
+DEBUG:Chroma:time to run knn query: 0.00039887428283691406
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 4.291534423828125e-06
+DEBUG:Chroma:time to run knn query: 0.00036406517028808594
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:47:54] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:49:21] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Index saved to {self._save_folder}/index.bin
+DEBUG:Chroma:Index saved to {self._save_folder}/index.bin
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:57:45] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:58:11] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 13:59:19] "[35m[1mGET /similarity_search?query=who+is+satoshi HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoindb already exists, Do you have the right embedding function?
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Index saved to {self._save_folder}/index.bin
+DEBUG:Chroma:Index saved to {self._save_folder}/index.bin
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+DEBUG:Chroma:time to pre process our knn query: 5.9604644775390625e-06
+DEBUG:Chroma:time to run knn query: 0.00035119056701660156
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.002526998519897461
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:04:25] "GET /similarity_search?query=who+is+satoshi HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0005211830139160156
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:05:18] "GET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.00028395652770996094
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:06:44] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.00028586387634277344
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:07:41] "GET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0002880096435546875
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:09:10] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.00034308433532714844
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:42:24] "GET /similarity_search?query=blah HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.002936840057373047
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:43:59] "GET /similarity_search?query=blah HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 7.152557373046875e-06
+DEBUG:Chroma:time to run knn query: 0.001325845718383789
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:44:08] "GET /similarity_search?query=test HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0002880096435546875
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:45:49] "GET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0003879070281982422
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:47:32] "GET /similarity_search?query=awoiejhfoiawefaw HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.0027298927307128906
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:52:16] "GET /similarity_search?query=test%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0035381317138671875
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:53:26] "GET /similarity_search?query=test%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.6226043701171875e-06
+DEBUG:Chroma:time to run knn query: 0.0004520416259765625
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:55:44] "GET /similarity_search?query=test%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0017690658569335938
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:57:54] "GET /similarity_search?query=bolt%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.86102294921875e-06
+DEBUG:Chroma:time to run knn query: 0.0023241043090820312
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 14:58:19] "GET /similarity_search?query=how%20to%20do%20a%20channel%20announcement%20message HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 7.152557373046875e-07
+DEBUG:Chroma:time to run knn query: 0.0013089179992675781
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:03:50] "GET /similarity_search?query=gossip%20messages HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0004432201385498047
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:06:00] "GET /similarity_search?query=test%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0005328655242919922
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:08:30] "GET /similarity_search?query=test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0010750293731689453
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:09:53] "GET /similarity_search?query=blah HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0004978179931640625
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:21:13] "GET /similarity_search?query=test HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 1.1920928955078125e-06
+DEBUG:Chroma:time to run knn query: 0.002576112747192383
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:22:40] "[35m[1mGET /similarity_search?query=blah%20blah HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 7.867813110351562e-06
+DEBUG:Chroma:time to run knn query: 0.0002930164337158203
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:43:12] "[35m[1mGET /similarity_search?query=test%20test HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 5.9604644775390625e-06
+DEBUG:Chroma:time to run knn query: 0.00033020973205566406
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:45:21] "[35m[1mGET /similarity_search?query=test%20test HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 4.291534423828125e-06
+DEBUG:Chroma:time to run knn query: 0.00031685829162597656
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:46:07] "[35m[1mGET /similarity_search?query=test%20test HTTP/1.1[0m" 500 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0003311634063720703
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:46:07] "[35m[1mGET /similarity_search?query=test%20test HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.00036215782165527344
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 15:58:50] "GET /similarity_search?query=test%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.00043201446533203125
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:01:45] "GET /similarity_search?query=tes%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0005788803100585938
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:01:52] "GET /similarity_search?query=tes%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.00021719932556152344
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:02:39] "GET /similarity_search?query=test HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 1.1920928955078125e-06
+DEBUG:Chroma:time to run knn query: 0.00030422210693359375
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:04:23] "GET /similarity_search?query=blah HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.1920928955078125e-06
+DEBUG:Chroma:time to run knn query: 0.00020599365234375
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:06:07] "GET /similarity_search?query=bips HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.00024199485778808594
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:08:35] "[35m[1mGET /similarity_search?query=blah%20blah HTTP/1.1[0m" 500 -
+DEBUG:Chroma:time to pre process our knn query: 1.1920928955078125e-06
+DEBUG:Chroma:time to run knn query: 0.0002789497375488281
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:08:36] "[35m[1mGET /similarity_search?query=blah%20blah HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.0002639293670654297
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:09:59] "GET /similarity_search?query=bips HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin3 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin3 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:16:52] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin2 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:17:54] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin3 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:18:59] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Index saved to {self._save_folder}/index.bin
+DEBUG:Chroma:Index saved to {self._save_folder}/index.bin
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin3 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:20:59] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:21:21] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Index not found
+DEBUG:Chroma:Index saved to {self._save_folder}/index.bin
+DEBUG:Chroma:Index saved to {self._save_folder}/index.bin
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin4 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin4 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:24:02] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:24:39] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:31:06] "[35m[1mGET /similarity_search?query=blah HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin4 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin4 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:35:31] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin4 already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Index not found
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:36:23] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:37:49] "[35m[1mGET /similarity_search?query=test HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0002961158752441406
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:45:13] "[35m[1mGET /similarity_search?query=tests HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 5.0067901611328125e-06
+DEBUG:Chroma:time to run knn query: 0.0002779960632324219
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:46:25] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.002989053726196289
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:47:50] "[35m[1mGET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 5.0067901611328125e-06
+DEBUG:Chroma:time to run knn query: 0.0003108978271484375
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:48:41] "GET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 6.198883056640625e-06
+DEBUG:Chroma:time to run knn query: 0.0002760887145996094
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:50:18] "GET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0009281635284423828
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:51:13] "GET /similarity_search?query=parse%20a%20bolt%2011%20invoice HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 3.814697265625e-06
+DEBUG:Chroma:time to run knn query: 0.00036597251892089844
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:54:30] "GET /similarity_search?query=how+do+you+parse+a+lightning+invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.814697265625e-06
+DEBUG:Chroma:time to run knn query: 0.0013098716735839844
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:54:40] "GET /similarity_search?query=parse%20a%20bolt%2011%20invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0005750656127929688
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:54:43] "GET /similarity_search?query=parse%20a%20bolt%2011%20invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 4.0531158447265625e-06
+DEBUG:Chroma:time to run knn query: 0.0009102821350097656
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:54:56] "GET /similarity_search?query=parse%20a%20bolt%2011%20invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 4.0531158447265625e-06
+DEBUG:Chroma:time to run knn query: 0.0006999969482421875
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 16:58:17] "GET /similarity_search?query=how%20to%20parse%20a%20bolt%2011%20invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 4.291534423828125e-06
+DEBUG:Chroma:time to run knn query: 0.0009388923645019531
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:00:12] "GET /similarity_search?query=how%20to%20parse%20a%20bolt11%20invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 4.0531158447265625e-06
+DEBUG:Chroma:time to run knn query: 0.0009829998016357422
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:02:50] "GET /similarity_search?query=what%20is%20a%20bolt11%20invoice%20and%20how%20do%20you%20parse%20it HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.001088857650756836
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:03:09] "GET /similarity_search?query=what%20is%20a%20bolt11%20invoice%20and%20how%20do%20you%20parse%20it%20in%20golang HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 3.814697265625e-06
+DEBUG:Chroma:time to run knn query: 0.0030069351196289062
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:11:43] "[35m[1mGET /similarity_search?query=how%20do%20you%20parse%20a%20bitcoin%20lightning%20invoice%20in%20elixir HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 2.86102294921875e-06
+DEBUG:Chroma:time to run knn query: 0.003220081329345703
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:14:11] "[35m[1mGET /similarity_search?query=how%20do%20I%20parse%20a%20bolt11%20invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.00026988983154296875
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:15:56] "GET /similarity_search?query=gossip%20messages%20announcement HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 5.9604644775390625e-06
+DEBUG:Chroma:time to run knn query: 0.0003230571746826172
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:17:14] "GET /similarity_search?query=test%20test HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0003409385681152344
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:18:41] "GET /similarity_search?query=how%20do%20I%20parse%20a%20bolt11%20invoice%20in%20rust HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 4.0531158447265625e-06
+DEBUG:Chroma:time to run knn query: 0.0008859634399414062
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:19:25] "GET /similarity_search?query=how%20to%20parse%20a%20bolt11%20invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0008938312530517578
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:20:22] "GET /similarity_search?query=how%20do%20I%20parse%20a%20bolt%2011%20invoice HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 551-819-898
+DEBUG:Chroma:time to pre process our knn query: 3.814697265625e-06
+DEBUG:Chroma:time to run knn query: 0.000335693359375
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:22:53] "GET /similarity_search?query=What%20is%20a%20BOLT11%20invoice%20and%20how%20do%20I%20parse%20it? HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0009388923645019531
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:23:38] "GET /similarity_search?query=What%20is%20a%20BOLT11%20invoice%20and%20how%20do%20I%20parse%20it%20with%20golang? HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.814697265625e-06
+DEBUG:Chroma:time to run knn query: 0.0004680156707763672
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:24:28] "GET /similarity_search?query=How%20does%20bolt%2012%20work? HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kodylow/Documents/github/deep-learning/ln-spec-bot/python_api/backend.py', reloading
+INFO:werkzeug: * Restarting with watchdog (fsevents)
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0003371238708496094
+DEBUG:Chroma:time to pre process our knn query: 1.1920928955078125e-06
+DEBUG:Chroma:time to run knn query: 0.00030803680419921875
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.00084686279296875
+DEBUG:Chroma:time to pre process our knn query: 4.0531158447265625e-06
+DEBUG:Chroma:time to run knn query: 0.0007109642028808594
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0008709430694580078
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0006749629974365234
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.0004930496215820312
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0006461143493652344
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0006377696990966797
+DEBUG:Chroma:time to pre process our knn query: 2.86102294921875e-06
+DEBUG:Chroma:time to run knn query: 0.0005059242248535156
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:27:29] "[35m[1mGET /similarity_search?query=how%20do%20I%20parse%20bolt11%20invoices? HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.0003669261932373047
+DEBUG:Chroma:time to pre process our knn query: 1.1920928955078125e-06
+DEBUG:Chroma:time to run knn query: 0.00030803680419921875
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.00035190582275390625
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0007479190826416016
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.0006520748138427734
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:28:49] "[35m[1mGET /similarity_search?query=how%20do%20I%20parse%20a%20bolt11%20invoice HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 8.106231689453125e-06
+DEBUG:Chroma:time to run knn query: 0.0003447532653808594
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.00026488304138183594
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0002741813659667969
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.00045490264892578125
+DEBUG:Chroma:time to pre process our knn query: 2.86102294921875e-06
+DEBUG:Chroma:time to run knn query: 0.0008482933044433594
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:29:54] "[35m[1mGET /similarity_search?query=how%20do%20I%20parse%20a%20bolt%2011%20invoice? HTTP/1.1[0m" 500 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 5.7220458984375e-06
+DEBUG:Chroma:time to run knn query: 0.000354766845703125
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:31:14] "GET /similarity_search?query=what%20is%20a%20bolt%2011%20invoice%20and%20how%20do%20I%20route%20it%20to%20a%20peer HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.6226043701171875e-06
+DEBUG:Chroma:time to run knn query: 0.0008487701416015625
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:36:36] "GET /similarity_search?query=whast%20it%20a%20bolt%2011%20invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.0003237724304199219
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:44:43] "GET /similarity_search?query=what%20is%20a%20bolt11%20invoice%20and%20how%20do%20I%20pay%20it HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.0005598068237304688
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:48:02] "GET /similarity_search?query=how%20do%20I%20parse%20a%20bolt11%20invoice HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0009281635284423828
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:51:16] "GET /similarity_search?query=how%20can%20I%20make%20a%20gossip%20map%20for%20the%20lightning%20network HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0007240772247314453
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:54:20] "GET /similarity_search?query=How%20do%20I%20build%20a%20gossip%20map%20for%20the%20lightning%20network%20using%20channel%20announcement%20messages HTTP/1.1" 200 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 2.86102294921875e-06
+DEBUG:Chroma:time to run knn query: 0.0003352165222167969
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:58:23] "GET /similarity_search?query=How%20do%20I%20build%20a%20gossip%20map%20for%20the%20lightning%20network%20using%20channel%20announcement%20messages HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.86102294921875e-06
+DEBUG:Chroma:time to run knn query: 0.000720977783203125
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 17:58:42] "GET /similarity_search?query=how%20do%20I%20probe%20channels%20before%20sending%20a%20payment HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0002620220184326172
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:00:47] "GET /similarity_search?query=how%20do%20I%20write%20golang%20tests%20in%20go%20for%20parsing%20payment%20requests HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0006008148193359375
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:01:49] "GET /similarity_search?query=bips%20bips%20bips%20bips%20bips%20lightningn%20netowkr HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.86102294921875e-06
+DEBUG:Chroma:time to run knn query: 0.0008740425109863281
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:02:12] "GET /similarity_search?query=what%20bips%20talk%20about%20the%20lightning%20network HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 9.5367431640625e-07
+DEBUG:Chroma:time to run knn query: 0.0004420280456542969
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:02:45] "GET /similarity_search?query=how%20does%20taproot%20work%20with%20schnorr%20signatures HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0008060932159423828
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:03:14] "GET /similarity_search?query=bips%20bitcoin%20improvement%20op_check_sig_verify HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 2.1457672119140625e-06
+DEBUG:Chroma:time to run knn query: 0.0004470348358154297
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:03:59] "GET /similarity_search?query=how%20do%20I%20structure%20channel%20announcement%20messages HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0007560253143310547
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:05:29] "GET /similarity_search?query=how%20do%20I%20decode%20a%20schnorr%20signature%20taproot%20bip300 HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0009558200836181641
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:06:53] "GET /similarity_search?query=how%20do%20I%20decode%20a%20schnorr%20signature%20taproot%20bip300 HTTP/1.1" 200 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0003142356872558594
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:10:21] "GET /similarity_search?query=how%20do%20I%20decode%20a%20schnorr%20signature%20taproot%20bip300 HTTP/1.1" 200 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 1.6689300537109375e-06
+DEBUG:Chroma:time to run knn query: 0.0002968311309814453
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:12:24] "GET /similarity_search?query=how%20do%20I%20decode%20a%20schnorr%20signature%20taproot%20bip300 HTTP/1.1" 200 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 4.0531158447265625e-06
+DEBUG:Chroma:time to run knn query: 0.0004820823669433594
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:22:07] "GET /similarity_search?query=how%20do%20you%20do%20taproot%20lightning%20channels%20on%20bitcoin HTTP/1.1" 200 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 1.0013580322265625e-05
+DEBUG:Chroma:time to run knn query: 0.00037932395935058594
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:24:10] "GET /similarity_search?query=how%20do%20I%20parse%20a%20taproot%20transaction HTTP/1.1" 200 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 4.0531158447265625e-06
+DEBUG:Chroma:time to run knn query: 0.0003681182861328125
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:26:36] "GET /similarity_search?query=parsing%20a%20lightning%20spec HTTP/1.1" 200 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.00037407875061035156
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:29:16] "GET /similarity_search?query=parsing%20a%20lightning%20spec HTTP/1.1" 200 -
+DEBUG:Chroma:Logger created
+WARNING:root:Collection bitcoin already exists, Do you have the right embedding function?
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.124.161.52:4080/ (Press CTRL+C to quit)
+DEBUG:Chroma:time to pre process our knn query: 3.0994415283203125e-06
+DEBUG:Chroma:time to run knn query: 0.0004949569702148438
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:30:36] "GET /similarity_search?query=parsing%20a%20lightning%20spec HTTP/1.1" 200 -
+DEBUG:Chroma:time to pre process our knn query: 1.9073486328125e-06
+DEBUG:Chroma:time to run knn query: 0.0007369518280029297
+INFO:werkzeug:127.0.0.1 - - [05/Mar/2023 18:37:31] "GET /similarity_search?query=how%20do%20I%20parse%20a%20bolt11%20invoice HTTP/1.1" 200 -
