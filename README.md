@@ -1,9 +1,8 @@
-# Wreck: the RECKLESS Lightning Specification Bot
+# Speck: the RECKLESS Lightning Specification Bot
 
 AI-powered search and chat for the lightning network BOLTs specification and major implementations: CoreLN, LND, Rust-Lightning, and Eclair
 
 All code & data used is 100% open-source. This is a fork of McKay Wrigley's excellent Network State GPT chatbot.
-
 
 ## Dataset
 

@@ -1,18 +1,3 @@
-[submodule "lnd"]
-path = implementations/go/lnd
-url = https://github.com/lightningnetwork/lnd
-[submodule "rustln"]
-path = implementations/rust/rust-lightning
-url = https://github.com/lightningdevkit/rust-lightning
-[submodule "eclair"]
-path = implementations/scala/eclair
-url = https://github.com/ACINQ/eclair
-[submodule "bolts"]
-path = bolts
-url = https://github.com/lighting/bolts
-[submodule "bips"]
-	path = bips
-	url = https://github.com/bitcoin/bips
 [submodule "implementations/c/lightning"]
 	path = implementations/c/lightning
 	url = https://github.com/ElementsProject/lightning
@@ -25,3 +10,9 @@ url = https://github.com/lighting/bolts
 [submodule "implementations/scala/eclair"]
 	path = implementations/scala/eclair
 	url = https://github.com/ACINQ/eclair
+[submodule "bips"]
+	path = bips
+	url = https://github.com/bitcoin/bips
+[submodule "bolts"]
+	path = bolts
+	url = https://github.com/lightning/bolts
