@@ -1,0 +1,46 @@
+2023-03-06 11:28:55.660902: how do I install rust?
+2023-03-06 11:28:55.660902: You can install Rust using Rustup, a command-line tool that installs Rust and manages its various components. Here are the steps to install Rust using Rustup:
+
+1. Open a terminal and run the following command to download Rustup:
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+This will download the Rustup installer and run it.
+
+2. Follow the prompts to complete the installation. You'll need to agree to the license terms and choose some installation options.
+
+3. Once the installation is complete, Rust and Cargo (Rust's package manager) will be installed.
+
+4. Verify that Rust is installed by running the following command:
+
+```
+rustc --version
+```
+
+This should print the version of Rust that you just installed.
+
+Congratulations, you have now installed Rust on your machine!
+2023-03-06 11:32:29.419604: how do I resolve merge conflicts off of a feature branch?
+2023-03-06 11:32:29.419604: To resolve merge conflicts off of a feature branch, follow these steps:
+
+1. Switch to your feature branch: `git checkout feature-branch`
+
+2. Fetch the latest changes from the remote repository: `git fetch origin`
+
+3. Merge the latest changes from the master branch into your feature branch: `git merge origin/master`
+
+4. If there are merge conflicts, Git will notify you. Use `git status` to see which files have conflicts.
+
+5. To resolve the conflicts, open the conflicted files in a text editor and modify the code to resolve the conflicts. Git will mark the conflicts with `<<<<<<<`, `=======`, and `>>>>>>>` markers.
+
+6. Once you have resolved all conflicts, stage the changes: `git add resolved-file.txt` (replace `resolved-file.txt` with the name of the file you have resolved conflicts in)
+
+7. Commit the changes: `git commit -m "Resolve merge conflicts"`
+
+8. Push the changes to the remote repository: `git push origin feature-branch`
+
+9. If there are additional merge conflicts, repeat steps 5-8 until all conflicts are resolved. 
+
+Note that it is important to carefully review the changes you have made to ensure that the code still works properly and that you have not introduced any new bugs or errors.
