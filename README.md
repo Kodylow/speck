@@ -1,4 +1,6 @@
 # Speck: the RECKLESS Lightning Specification Bot
+![header-speck-2017](https://user-images.githubusercontent.com/3596602/223659009-df8b61e2-a9b3-4446-911d-506da6a641e9.jpg)
+
 
 AI-powered search and chat for the lightning network BOLTs specification and major implementations: CoreLN, LND, Rust-Lightning, and Eclair
 
